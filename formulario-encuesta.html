@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Formulario para presupuesto- freeCodeCamp - TheSurgeon.dev</title>
+    </head>
+        <body>
+            <main>
+            <div class="container"><header class="header"></header></div><h1 id="title">Formulario para presupuesto - freeCodeCamp - TheSurgeon.dev</h1>
+            </main>
+                <p id="description">Bienvenidos al primer proyecto de <a href="htpps=//TheSurgeon.dev" target="_blank">"TheSurgeon.dev"</a>.</p><br>
+                <p>Esta página sirve de examen para el certificado de diseño web de <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp.org</a></p><br>
+                <p>Vamos a crear un formulario para solocitar un presupuesto de un página web.</p><br>
+                </header>
+            <!--Creamos un formulario para el envio de información, en este caso para pedir
+            un presupuesto de una página web.
+            Los "input" required son los campos obligatorios-->
+            <div>
+                <form id="survey-form" required>
+                    <label for="name" id="name-label">Introduzca su nombre: <br><input type="text" id="name" name="name" placeholder="Antonio" required></label><br>
+                    <label for="last-name" id="last-name-label">Introduza su apellido: <br><input type="text" name="last-name" placeholder="Frutos" required></label><br>
+                    <label for="email"id="email-label">Introduzca su correo: <br><input type="email" id="email" name="email" placeholder="tuemail@dominio.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required></label><br>
+                    <label for="number" id="number-label">Introduzca su edad: <br><input type="number" id="number" name="number" placeholder="36" min="18" max="120"></label><br>
+                    <label for="phone" id="phone-label">Introduzca su teléfono: <br><input type="number" id="phone" name="phone" placeholder="+34789345678" pattern="[+]{1}[0-9]{11,14}" maxlength="11"></label><br>
+                    <label for="dropdown" id="dropdown-label">Elija el formato de su página web: <br>
+                    <select id="dropdown" required>
+                        <option value="">Selecciona una opcion:</option>
+                        <option value="1">HTML</option>
+                        <option value="2">HTML + CSS</option>
+                    </select>
+                    </label><br>
+                    <label for="conocido" id="conocido-label">Indique como nos ha conocido: <br>
+                        <input type="checkbox" id="conocido-internet" name="conocido" value="internet">Internet<br>
+                        <input type="checkbox" id="conocido-television" name="conocido" value="television">Televisión<br>
+                        <input type="checkbox" id="conocido-amigo" name="conocido" value="amigos">Amigos<br>
+                        <input type="checkbox" id="conocido-otros" name="conocido" value="otros-medios">Otros médios<br>
+                    </label>
+                    <label for="comentarios" id="comentarios-label">Introduzca la temática y otros comentarios de interés: <br>
+                    <textarea id="comentarios" name="comentarios" cols="50" rows="5" placeholder="Comentarios de interés">
+                    </textarea><br>
+                    </label>
+                    <label for="satisfaccion" id="satisfaccion-label">Indique el grado de satisfacción de este formulario: <br>
+                        <input type="radio" id="sobresaliente" name="satisfaccion" value="sobresaliente">7-10<br>
+                        <input type="radio" id="aprobado" name="satisfaccion" value="aprobado">5-7<br>
+                        <input type="radio" id="suspenso" name="satisfaccion" value="suspenso">2-4<br>
+                        <input type="radio" id="lamentable" name="satisfaccion" value="lamentable">0-1<br>
+                    </label><br>
+                    <label for="submit" id="submit-label">
+                        <input type="submit" id="submit" name="submit" value="submit">
+                    </label>
+                </form>
+            </div>
+        </div>
+        </body>
+</html>

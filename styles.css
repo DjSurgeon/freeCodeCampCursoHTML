@@ -1,0 +1,31 @@
+header {
+padding: 1% 5%;
+}
+h1 {
+    text-align: center;
+    text-size-adjust: auto;
+    font-family: Impact, sans-serif;
+}
+p {
+    margin: 0%;
+}
+body {
+    text-align: center;
+    background-color: lightblue;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+label {
+    text-align: left;
+    font-size: 1.125rem;
+    padding-top: 1% 5%;
+}
+form {
+    border-style: groove;
+    text-align: left;
+    display: inline-block;
+    align-content: normal;
+    background: lightslategray;
+    padding: 1% 2%;
+    border-radius: 0.25rem; 
+}
