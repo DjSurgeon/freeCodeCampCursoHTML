@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- Crea una aplicación que sea funcionalmente similar a https://technical-documentation-page.freecodecamp.rocks -->
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Guia de Ubuntu para su instalación</title>
+  </head>
+  <body>
+        <!-- Puedes ver un elemento nav con su correspondiente id="navbar" -->
+    <nav id="navbar">
+      <img src="https://es.wikipedia.org/wiki/Ubuntu#/media/Archivo:Ubuntu-logo-2022.svg" width="220px" height="100px" alt="Logo Ubuntu 2022">
+        <!-- La barra de navegación deberá contener un elemento header, el cual contendrá texto que describa el tema de la documentación técnica -->
+        <!-- El elemento header dentro de la #navbar debería ir antes que los elementos (a) de la barra de navegación -->
+      <header>Guia de Ubuntu</header>
+        <!-- Además, la barra de navegación deberá contener elementos de enlace (a) con la clase nav-link. Debe haber uno para cada elemento con la clase main-section -->
+        <ul>
+        <li><a class="nav-link" href="#preguntas_de_uso_frecuente">Preguntas de Uso Frecuente</a></li>
+        <li><a class="nav-link" href="#primeros_pasos">Primeros pasos</a></li>
+        <li><a class="nav-link" href="#usuario_domestico">Usuario domestico</a></li>
+        <li><a class="nav-link" href="#administracion_del_sistema">Administracion del sistema</a></li>
+        <li><a class="nav-link" href="#conoce_tu_sistema">Conoce tu sistema</a></li>
+        <li><a class="nav-link" href="#programacion">Programacion</a></li>
+      </ul>
+    </nav>
+        <!-- Cada elemento con la clase nav-link debería tener texto que corresponda al texto del header de cada section -->
+        <!-- Al hacer click en un elemento de tu barra de navegación, la página debería dirigirse a la sección correspondiente del elemento #main-doc -->
+        <!-- Puedes ver un elemento main con su correspondiente id="main-doc", el cual abarcará el contenido principal de la página (documentación técnica) -->
+    <main id="main-doc">
+        <!-- Dentro del elemento #main-doc, se pueden ver varios elementos section, cada uno con la clase main-section. Debe haber un mínimo de cinco -->
+        <!-- El primer elemento dentro de cada .main-section debería ser un elemento header, el cual contendrá texto que describa el tema de esa sección -->
+        <!-- Cada elemento section con la clase main-section debería tener también un id que corresponda al texto de cada header contenido dentro de él -->
+        <!-- Los elementos .main-section deberán tener al menos diez elementos p en total -->
+        <!-- Los elementos .main-section deberán tener al menos cinco elementos code en total -->
+        <!-- Los elementos .main-section deberán tener al menos cinco items li en total -->
+      <h1>Guia de Ubuntu</h1>
+      <section class="main-section" id="preguntas_de_uso_frecuente">
+        <header>Preguntas de Uso Frecuente</header>
+          <h2>Ubuntu</h2><hr>
+            <h3>¿Qué es Ubuntu?</h3>
+              <p><strong>Ubuntu</strong> es un sistema operativo <em>GNU/Linux</em> completo, está disponible gratuitamente y cuenta con el apoyo de una importante comunidad de usuarios.</p>
+              <p>La comunidad Ubuntu se basa en el Manifiesto Ubuntu, el cual compromete públicamente a:</p>
+              <ol>
+                <li>Nunca se tendrá que pagar por <strong>Ubuntu</strong>, ni siquiera por la "Edición Comercial". Todas las versiones de Ubuntu se desarrollarán con la misma calidad.</li>
+                <li>Se incluirán las mejores traducciones y opciones de accesibilidad disponibles para llegar al mayor número posible de personas.</li>
+                <li>Las nuevas versiones de Ubuntu se distribuirán de forma regular y predecible; se hará disponible una nueva versión cada seis meses. El usuario tendrá la libertad de elegir entre la versión estable o la versión en desarrollo. Cada versión tendrá apoyo técnico por, al menos, 18 meses.</li>
+                <li>Ubuntu está completamente comprometido a los principios de desarrollo del <em>software libre</em></li>
+              </ol>
+            <h3>¿Quién lidera Ubuntu?</h3>
+              <p><strong>Ubuntu</strong> es un proyecto comunitario que involucra a muchos voluntarios y cuenta además con el patrocinio de Canonical Ltd. Canonical no cobrará licencias por Ubuntu, ni ahora ni en el futuro. Canonical sí cobrará a las personas o instituciones que necesiten apoyo técnico u otros servicios profesionales. Canonical no tiene el monopolio del servicio técnico sino que es libre el servicio.</p>
+          <h2>Guía Ubuntu</h2><hr>
+            <h3>¿Qué es Guía Ubuntu?</h3>
+              <p>Guía <strong>Ubuntu</strong> es un proyecto no oficial y libre en el que cualquiera puede colaborar con el objetivo de crear un lugar común para ayudar a todo usuario del sistema Ubuntu mediante el formato Wiki. La Guía Ubuntu hace referencia tanto a la última versión de Ubuntu disponible como a las anteriores.</p>
+            <h3>¿Quién es el propietario de Guía Ubuntu?</h3>
+              <p>El sitio web está mantenido por unos administradores.</p>
+              <p>Los artículos alojados en este sitio web estan licenciados por sus autores bajo Reconocimiento-NoComercial-CompartirIgual 2.5, de manera que los artículos son libres de utilizarse mientras se respete el autor original, fin no lucrativo y obras derivadas respeten la misma licencia.</p>
+        </section>
+        <section class="main-section" id="primeros_pasos">
+            <header>Primeros pasos</header>
+            <h2>Optimizar el kernel</h2><hr>
+            <p><strong>Ubuntu</strong>, por defecto, nos instala un kernel Linux compilado para i386 (en la versión de Ubuntu para Intel y compatibles). Lo ideal sería que el instalador detectase nuestra arquitectura e instalase una versión compilada para nuestro microprocesador, pero lamentablemente no es así. Sin embargo la solución es muy sencilla, simplemente debemos instalar el paquete correspondiente a nuestro procesador.</p>
+                    <h3>Modo gráfico</h3>
+                    <ul>
+                        <li>Vamos al menú Sistema de GNOME, abrimos Administración e iniciamos el Gestor de Paquetes Synaptic.</li>
+                        <li>Una vez dentro de Synaptic pulsamos en Recargar para obtener los últimos paquetes.</li>
+                        <li>Tras actualizar, escogemos la sección Sistema Base.</li>
+                        <code>Para evitar problemas con núcleos no oficiales, no hay que marcar Sistema base(universe)</code>
+                        <li>Bajamos hasta la zona dónde tenemos paquetes que se llaman: linux-image-X.X.X-nombre_de_nuestro_procesador y marcamos la versión más actual. Por ejemplo: linux-image-2.6.10-5-k7.</li>
+                        <li>Si tenemos algún hardware que requiera módulos del núcleo especiales (véase tarjetas Nvidia), debemos marcar también los linux-restricted-modules correspondientes al núcleo seleccionado.</li>
+                        <li>Aplicamos los cambios y la proxima vez que reiniciemos se cargará el núcleo seleccionado.</li>
+                    </ul>
+                    <h3>Modo consola</h3>
+                    <ul>
+                        <li>Si tenemos un procesador Intel Pentium o superior (Pentium Pro, Celeron, Pentium II, Pentium III, Pentium IV, Pentium Mobile):</li>
+                        <code>$ sudo aptitude install linux-686</code>
+                        <li>Si tenemos varios procesadores Intel Pentium o superior, o uno con HyperThreading, el mismo paquete anterior también nos bastará, ya que viene compilado con compatibilidad de SMP. Existe otro paquete llamado linux-686-smp que es prácticamente igual que linux-686 ya que instala lo mismo.</li>
+                        <li>Si tenemos un procesador AMD K6, K7 o Duron:</li>
+                        <code>$ sudo aptitude install linux-k7</code>
+                        <li>Si tenemos varios procesadores AMD K6, K7 o Duron, o uno que virtualice más de una CPU:</li>
+                        <code>$ sudo aptitude install linux-image-k7-smp linux-restricted-modules-k7-smp</code>
+                    </ul>
+            <h2>Activar universe y multiverse</h2><hr>
+                    <p>Ubuntu oficialmente sólo da soporte o apoya una cierta cantidad de programas disponibles directamente usando los programas Añadir y quitar o Synaptic (ver: Añadir aplicaciones) mediante el sistema de repositorios. No es una cantidad muy grande ni completa pero afortunadamente la comunidad de usuarios hace posible que se puedan instalar decenas de miles de programas.</p>
+                    <p>Este artículo trata de activar los dos repositorios más importantes y conocidos extraoficiales:</p>
+                    <ul>
+                        <li><strong>Universe</strong>: programas mantenidos por la comunidad</li>
+                        <li><strong>Multiverse</strong>: programas comerciales o privativos de terceras empresas o fabricantes.</li>
+                    </ul>
+            <h2>Aceleración gráfica de Ubuntu</h2><hr>
+                <p>Si posees una tarjeta de vídeo o gráfica moderna, es posible que su fabricante, habitualmente NVIDIA o ATI, ofrezca la instalación de un software extra no libre, para aumentar el rendimiento y potencia de tu tarjeta de vídeo. Ubuntu, de serie, sólo puede y quiere incluir aquel que es software libre por lo que, si no te importa sacrificar este punto, deberás de realizar una serie de pasos que pueden variar dependiendo de tu fabricante y modelo de tarjeta. Suponiendo que sus fabricantes o distribuidores ofrezcan de alguna manera software para Ubuntu o sistemas GNU/Linux.</p>
+                <p>Sin esta posibilidad lo habitual es que todas aquellas aplicaciones que requieran de aceleración gráfica, especialmente juegos, no funcionen o no sean jugables por su bajo rendimiento.</p>
+                <p>Actualmente nVIDIA es la que está ofreciendo mejor software propio por su rendimiento, aunque fabricantes como ATI están aumentando su desarrollo en sistemas Linux como Ubuntu y otros como Intel han ofrecido como libre su software relacionado con sus tarjetas gráficas, populares en algunos equipos de fabricantes conocidos.</p>
+                    <h3>Envy</h3>
+                    <p>Ahora también hay disponible una nueva forma de conseguir la aceleración gráfica de forma muy cómoda y rápida. Se consigue sin más que instalar el paquete Envy, desarrollado por Alberto Milone y seleccionar nuestra marca de tarjeta.</p>
+                    <p>Es recomendable obtener siempre la ultima versión de Envy de la web de su autor.</p>
+                    <ul>
+                        <li>Este instalador sólo es compatible con las tarjetas gráficas ATI o NVIDIA.</li>
+                        <li>Normalmente instala las ultimas versiones de los controladores ATI o NVIDIA.</li>
+                    </ul>
+                    <p>Consiste en un script realizado en el lenguaje Python y que utiliza las librerías gráficas GTK, por lo tanto se integra con los escritorios GNOME y Xfce (también funciona en KDE, aunque no está bien integrado). Realizará todo este trabajo por nosotros y que, al terminar, nos dará la opción de reiniciar nuestro equipo. Tras eso, tendremos ya activa la aceleración gráfica.</p>
+            <h2>Instalar codecs multimedia</h2><hr>
+                <p>Ubuntu, por defecto, tan sólo trabaja con formatos multimedia libres. Por desgracia, la mayoría de los formatos más populares no lo son. A continuación se detalla cómo poder reproducirlos.</p>
+                <h3>Formatos y códecs multimedia más comunes</h3>
+                    <p>Una aclaración antes de empezar. No es lo mismo un formato que un códec. A grandes rasgos, un formato es una especificación de cómo guardar una información mientras que un códec es una implementación de un formato. Así, podemos tener un archivo en formato MP3 pero necesitaremos un códec (codificador-decodificador) para leerlo. En la mayoría de los casos, ambos términos pueden ser utilizados indistintamente.</p>
+                    <p>Asimismo, también existen los contenedores multimedia, archivos que pueden contener distintos formatos. Habitualmente, la extensión del archivo está relacionado con el tipo de contenedor, pero no da información sobre el formato o códec utilizado en él.</p>
+                    <p>En ficheros de audio, el formato más usado es MP3, que no es libre. Como es natural, Microsoft tiene su propio formato privativo, WMA (Windows Media Audio). Un formato muy común para escuchar la radio por Internet es Real Audio. Existe otro formato, Ogg Vorbis, de alta calidad, que está mucho menos extendido, aunque tiene la ventaja de ser libre.</p>
+                    <p>En ficheros de vídeo, la lista es análoga. Los formatos más usados son los derivados del MPEG: MPEG-2 (usado en ficheros .mpeg y vídeos en DVD) y MPEG-4 (con famosos códecs como {{w|Di, Xvid y MS-MPEG de Microsoft). De nuevo, Microsoft tiene dos formatos privativos: WMV (Windows Media Video) y ASF para reproducción por Internet. Para flujos de vídeo por Internet el formato más común es Real Video. Nuevamente, existe otro formato, Ogg Theora, muy poco extendido, con la ventaja de ser libre, al igual que el códec Xvid.</p>
+                    <p>Lamentablemente, como puede comprobar, la práctica totalidad de los ficheros que encontrará corresponden a formatos no libres. El caso estrella es el formato MP3.</p>
+                    <code>De todos los formatos mencionados anteriormente, tanto Windows XP como Vista sólo son capaces de reproducir los formatos propios de Microsoft y los MP3, necesitando, al igual que Ubuntu, instalar códecs adicionales para reproducir el resto de los formatos.</code>
+            <h2>Instalar impresora</h2><hr>
+                <p>Uno de los primeros pasos es instalar el hardware en Ubuntu. En este caso una impresora doméstica.</p>
+                <h3>Impresoras compatibles con Ubuntu</h3>
+                  <p>Gran parte de las impresoras mas populares, de distintos fabricantes como HP, Epson, Canon, etc, funcionan en Ubuntu, unas mejor que otras, en caso de dudas o si estas pensando en adquirir una nueva impresora tienes una lista (en inglés) actualizada proporcionada por LinuxPrinting.org.</p>
+                <h3>Revisar niveles de tinta</h3>
+                  <p>Por defecto las impresoras no proporcionan información sobre el nivel de tinta, para añadir esta posibilidad se debe instalar el paquete inklblot o mtink, el primero es recomendable tanto para impresoras Canon como Epson, mientras que el segundo solo para Canon; una vez instalado el paquete se debe de agregar al usuario al grupo lp, de lo contrario no se podrá conocer el nivel de tinta. Para añadir a un usuario a dicho grupo se siguen estos pasos (se requieren privilegios de usuario root):</p>
+                  <ol>
+                    <li>Dirigirse a Sistema -> Administración -> Usuarios y grupos.</li>
+                    <li>Desbloquear la gestión de usuarios y grupos (hacer clic sobre el ícono en forma de llaves e introducir la contraseña).</li>
+                    <li>Añadir a los usuarios que podrán verificar los niveles de tinta al grupo ip.</li>
+                  </ol>
+                  <p>O bien teclear desde una terminal:</p>
+                  <code>$sudo usermod -G lp -a USUARIO</code>
+                  <p>Siendo USUARIO el o los usuarios que se desean añadir el grupo. Finalmente se debe reiniciar la sesión de los usuarios activos para que los cambios tengan efecto.</p>
+                </section>
+        <section class="main-section" id="usuario_domestico">
+            <header>Usuario domestico</header>
+            <h2>Usuario doméstico</h2><hr>
+              <p>Esta sección trata de cómo instalar programas o software relacionados con las tareas cotidianas de cualquier usuario medio, de la manera mas sencilla posible.</p>
+            </section>
+        <section class="main-section" id="administracion_del_sistema">
+            <header>Administracion del sistema</header>
+            <h2>Administración del sistema</h2><hr>
+              <p>Esta sección trata de cómo administrar el sistema de forma mas completa o específica que para un usuario recién llegado a Ubuntu.</p>
+            </section>
+        <section class="main-section" id="conoce_tu_sistema">
+            <header>Conoce tu sistema</header>
+            <h2>Conoce tu sistema</h2><hr>
+              <p>Esta sección trata de cómo mejorar o entender el funcionamiento del sistema interno que se llama GNU/Linux.</p>
+            </section>
+        <section class="main-section" id="programacion">
+            <header>Programacion</header>
+            <h2>Programación</h2>
+              <p>Esta sección trata de las herramientas disponibles para la programar en Ubuntu y tareas relacionadas (documentación, traducción, etc).</p>
+            </section>
+        </main>
+    </body>
+</html>
