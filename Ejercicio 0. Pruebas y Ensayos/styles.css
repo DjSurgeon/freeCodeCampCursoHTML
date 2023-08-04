@@ -1,0 +1,21 @@
+#main-header {
+    background-color: blue;
+}
+#main-nav {
+    background-color: blueviolet;
+}
+#main-aside {
+    background-color: brown;
+    float: left;
+    height: 300px;
+}
+#main-section {
+    background-color: chartreuse;
+}
+#main-footer {
+    background-color: darkgoldenrod;
+}
+li {
+    background-color: aquamarine;
+    display: inline;
+}
