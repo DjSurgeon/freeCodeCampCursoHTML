@@ -1,0 +1,51 @@
+
+#main-header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(45deg, burlywood, blanchedalmond);
+    width: 40%;
+    margin: 10px auto;
+    padding: 10px 15px;
+    box-shadow: burlywood 5px 5px 10px;
+    text-shadow: gray 3px 3px 10px;
+}
+hr {
+    width: 75%;
+}
+#main-section {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+#index-galeria {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: burlywood 3px 3px 10px;
+    padding: 10px;
+    margin: 2px auto;
+    transition: ease-in-out 0.3ms 01.ms;
+;}
+#index-galeria:hover{
+    transform: scale(1.1);
+}
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+figure{
+    border-radius: 7px;
+}
+figcaption {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.7em;
+    text-align: right;
+    margin: 5px;
+}
+footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    font-size: 0.7em;
+}
