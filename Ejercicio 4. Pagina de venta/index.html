@@ -1,30 +1,160 @@
 <!DOCTYPE html>
 <!-- Objetivo: Crea una aplicación que sea funcionalmente similar a https://product-landing-page.freecodecamp.rocks -->
 <html lang="es">
-    <head>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Jamón cortado a mano</title>
-    </head>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jamón cortado a mano</title>
+</head>
 <!-- Tu página de inicio de producto debe tener un elemento header con un correspondiente id="header" -->
 <!-- Puedes ver una imagen dentro del elemento header con un correspondiente id="header-img" (Un logotipo sería una buena imagen aquí) -->
-    <body>
-        <div id="pagina-principal">
-            <header id="header" class="header">
-<!-- Dentro el elemento #header, puedes ver un elemento nav con su correspondiente id="nav-bar" -->  
-<!-- Puedes ver al menos tres elementos cliqueables dentro del elemento nav, cafda una con la clase nav-link -->              
-                <nav id="nav-bar">
-                    <ul>
-                        <li><a class="nav-link" href="jamon">Jamón</a></li>
-                        <li><a class="nav-link" href="paleta">Paleta</a></li>
-                        <li><a class="nav-link" href="embutido">Embutido</a></li>
-                    </ul>
-                </nav>
-            </header>
+
+<body>
+    <div>
+        <header id="header">
+            <div>
+                <img id="header-img" src="img/jamonportada.png" alt="Delicioso jamón cortado a mano" />
+            </div>
+            <!-- Dentro el elemento #header, puedes ver un elemento nav con su correspondiente id="nav-bar" -->
+            <!-- Puedes ver al menos tres elementos cliqueables dentro del elemento nav, cada una con la clase nav-link -->
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li><a class="nav-link" href="#jamon">Jamón</a></li>
+                    <li><a class="nav-link" href="#paleta">Paleta</a></li>
+                    <li><a class="nav-link" href="#embutido">Embutido</a></li>
+                    <li><a class="nav-link" href="#form">Contacto</a></li>
+                </ul>
+            </nav>
+    </div>
+    </header>
+    <main>
+        <div id="principal">
+            <div>
+                <h1 id="inicio">Productos autenticamente ibéricos</h1>
+            </div>
+            <h2 id="jamon">Jamón Iberico</h2>
+            <p>El jamón ibérico, una joya culinaria profundamente arraigada en la cultura gastronómica española, es
+                mucho más que un simple alimento. Con sus intensos sabores, texturas exquisitas y una rica historia que
+                se remonta a siglos atrás, el jamón ibérico se ha convertido en un símbolo de la excelencia culinaria y
+                el arte de la crianza.
+                Originario de la península ibérica, el jamón ibérico se produce a partir de cerdos de raza ibérica, una
+                especie única que pasta libremente en las vastas dehesas y montañas de España y Portugal. La
+                alimentación y el estilo de vida de estos cerdos influyen directamente en la calidad y el sabor de la
+                carne. Su dieta se compone principalmente de bellotas y hierbas silvestres, lo que imparte al jamón un
+                sabor distintivo y delicado, caracterizado por notas dulces y nuez.</p>
+            <p>El proceso de elaboración del jamón ibérico es un arte que se ha transmitido de generación en
+                generación. Después de la cuidadosa selección de los cerdos, comienza la fase de curado, un proceso que
+                puede durar años. Primero, las patas se salan meticulosamente para deshidratar la carne y prepararla
+                para el proceso de maduración. Luego, los jamones se cuelgan en secaderos naturales, donde el viento y
+                el clima único de la región desempeñan un papel fundamental en el desarrollo de los sabores y aromas
+                únicos. A medida que el jamón se cura lentamente, las grasas intramusculares se infiltran en la carne,
+                creando una textura marmoleada que se deshace en el paladar.</p>
+            <p>El resultado final es un jamón ibérico de profundo color rojo oscuro, con vetas de grasa que le
+                confieren una jugosidad inigualable. Al cortarlo en finas lonchas, se revela un mosaico de tonos y
+                texturas que son un verdadero placer visual. El sabor es una sinfonía de sabores que evocan la tierra y
+                la naturaleza, con matices que van desde dulces hasta salados y una sutil nota de ahumado.</p>
+            <p>El jamón ibérico se disfruta mejor de manera sencilla, permitiendo que sus sabores intrínsecos brillen.
+                Una tabla de jamón, acompañada de pan crujiente y aceite de oliva virgen extra, es una manera perfecta
+                de apreciar su esencia. Aunque también se puede maridar con vinos tintos robustos o incluso cavas
+                espumosos para una experiencia sensorial más completa.</p>
+            <p>Este manjar culinario no es solo un alimento, sino un símbolo de tradición, artesanía y dedicación. Cada
+                bocado nos conecta con la historia y el entorno natural de la península ibérica, transportándonos a los
+                campos soleados y las colinas verdes donde estos cerdos se crían con cuidado. El jamón ibérico es un
+                tributo a la paciencia, la pasión y la maestría de los productores que han perfeccionado este arte a lo
+                largo de los años.</p>
+            <!-- Puedes ver un vídeo del producto incrustado con id="video" -->
+            <video id="video" width="320" height="240" autoplay>
+                <source src="movie.mp4" type="video/mp4">
+                El video no esta disponible
+            </video>
+            <h2 id="paleta">Paleta Iberica</h2>
+            <p>La paleta ibérica, un tesoro gastronómico arraigado en la rica tradición culinaria de España, es una
+                muestra sublime del arte de la curación y una delicia que deleita todos los sentidos. Este exquisito
+                manjar, derivado de la misma raza de cerdo ibérico que produce el famoso jamón ibérico, presenta una
+                mezcla única de sabores y texturas que evocan la pasión por la calidad y la autenticidad.</p>
+            <p>Producida en las mismas regiones donde se crían los cerdos ibéricos, la paleta ibérica se obtiene de las
+                extremidades anteriores del animal. Al igual que su primo el jamón, las paletas son el resultado de una
+                crianza cuidadosa y un proceso de curación que resalta sus características únicas. Estos cerdos de raza
+                ibérica, conocidos por vagar libremente por las extensas dehesas y pastos, se alimentan principalmente
+                de bellotas y hierbas silvestres. Esta dieta especial da como resultado una carne con matices
+                excepcionales, caracterizada por su infiltración de grasas y su sabor delicado.</p>
+            <p>El proceso de elaboración de la paleta ibérica es similar al del jamón, pero tiene sus propias
+                particularidades. Después de la selección de cerdos, la paleta se somete a un proceso de salazón, que
+                deshidrata la carne y la prepara para la fase de curado. Las paletas se cuelgan en bodegas y secaderos
+                naturales, donde los vientos frescos y la atmósfera de la región influyen en su maduración. A lo largo
+                de meses, e incluso años, la carne se transforma gradualmente. Las grasas infiltradas se convierten en
+                una red de venas que imparten una textura marmoleada y una suavidad excepcional.</p>
+            <p>La paleta ibérica madura desarrolla un color rojo oscuro y una capa de grasa en la superficie, que
+                protege y potencia sus cualidades organolépticas. Al cortarla en finas lonchas, se desvela un abanico de
+                colores y texturas que dan fe de su complejidad. Cada mordisco es un viaje sensorial: la carne se
+                deshace en la boca, liberando sabores profundos y un regusto a nuez que es una firma de la dieta de
+                bellota.</p>
+            <p>La paleta ibérica se disfruta mejor de manera sencilla, como protagonista en un plato o en un bocadillo
+                de alta calidad. Su sabor intenso no requiere adornos excesivos; basta con acompañarla con pan crujiente
+                y un chorrito de aceite de oliva virgen extra. Otra opción es maridarla con vinos tintos, que realzan
+                sus matices terrosos y sabores intensos.</p>
+            <p>Más que una delicia gastronómica, la paleta ibérica encarna la pasión por la tradición y la maestría en
+                la curación. Cada loncha es un tributo a la herencia culinaria de España y a la dedicación de los
+                productores que mantienen viva esta práctica artesanal. La paleta ibérica es un regalo de la tierra, una
+                muestra de cómo la naturaleza, la paciencia y la pasión pueden fusionarse en una experiencia culinaria
+                inolvidable.</p>
+            <h2 id="embutido">Embutido Iberico</h2>
+            <p>El embutido ibérico, una sinfonía de sabores y tradiciones que emerge de las regiones rurales de España y
+                Portugal, es una manifestación magistral de la habilidad humana para transformar ingredientes simples en
+                exquisiteces culinarias. Esta categoría de alimentos, que incluye una variedad de productos curados y
+                embutidos, se caracteriza por su sabor distintivo, su textura jugosa y su arraigo en las costumbres
+                gastronómicas locales.</p>
+            <p>Los embutidos ibéricos son un producto directo de la crianza de cerdos ibéricos, una raza única que se
+                cría en vastas áreas de dehesas y pastizales. Estos cerdos disfrutan de una dieta que incluye bellotas y
+                hierbas silvestres, lo que confiere a su carne un sabor inconfundible. La magia ocurre cuando esta carne
+                se mezcla con una cuidada selección de especias y condimentos locales, creando una mezcla que se
+                introduce en tripas naturales o sintéticas para dar forma a los embutidos.</p>
+            <p>Dentro de la familia de embutidos ibéricos, el chorizo, el salchichón y la sobrasada son algunas de las
+                estrellas más brillantes. El chorizo, de color rojo intenso, está elaborado con carne picada, pimentón y
+                ajo, entre otros ingredientes. Su sabor es una combinación de especias ahumadas y ricas notas de
+                pimienta. El salchichón, por otro lado, presenta una textura más suave y una mezcla de especias más
+                suave, lo que resulta en un sabor equilibrado y lleno de matices.</p>
+            <p>La sobrasada, típica de las Islas Baleares, es una maravilla única en su género. Esta mezcla de carne
+                picada, pimentón y sal se presenta en forma de pasta, que se puede untar en pan o usar como ingrediente
+                en una variedad de platos. Su color anaranjado y su textura suave son acompañados por un sabor especiado
+                y ahumado que se desarrolla en su proceso de curación.</p>
+            <p>El proceso de curación es esencial para el embutido ibérico. Después de ser embutidos, los productos
+                pasan por un período de secado y maduración en bodegas naturales. Durante este tiempo, las grasas se
+                infiltran en la carne, creando una textura marmoleada que es característica de estos productos. La
+                duración de este proceso varía según el tipo de embutido, pero puede extenderse durante meses o incluso
+                años, lo que confiere a los embutidos su sabor único y complejo.</p>
+            <p>Los embutidos ibéricos se presentan en diversas formas, desde finas lonchas hasta trozos más gruesos. Se
+                pueden disfrutar solos como aperitivo o como parte de tapas y platos más elaborados. Son la
+                personificación de la versatilidad culinaria, que se presta a una infinidad de combinaciones y
+                presentaciones.</p>
+            <p>Más allá de su sabor y textura, los embutidos ibéricos encierran la historia de una región y la
+                dedicación de las personas que han perfeccionado su arte a lo largo de los siglos. Son un homenaje a la
+                tierra y a las tradiciones ancestrales, una manera de conectar con la esencia de la cultura gastronómica
+                ibérica. Cada bocado es un viaje a través del tiempo y el espacio, una oportunidad para saborear la
+                autenticidad y la pasión que convergen en cada pedazo de embutido ibérico.</p>
         </div>
-    </body>
+        <hr>
+        <!-- Tu página de inicio tiene un elemento form con un correspondiente id="form" -->
+        <!-- Dentro del formulario, hay un campo input con id="email", donde puedes ingresar tu dirección de email -->
+        <!-- El campo de entrada #email debe tener un marcador de texto para que los usuarios sepan para que sirve este campo -->
+        <!-- El campo de entrada #email usa validación HTML5 para confirmar que el texto ingresado es una dirección de email -->
+        <!-- Dentro del formulario, hay un input de tipo submit (enviar) con su correspondiente id="submit" -->
+        <!-- Cuendo haces click en el elemento #submit, el email es enviado a una página web (Utiliza esta URL de pruebas: https://www.freecodecamp.com/email-submit) -->
+        <div>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <h4>Subscribete a nuestra lista de correo:</h4>
+                <span>Email: </span><input name="email" id="email" type="email" placeholder="Introduce tu correo" required>
+                <input id="submit" type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
 
 
 
