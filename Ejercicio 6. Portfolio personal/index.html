@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<!-- Construye una página portafolio personal -->
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.6.1/ci.min.css"
+/>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal Portfolio for FreeCodeCamp</title>
+    </head>
+    <body>
+        <!-- Empiece de la barra de navegacion -->
+<!-- Tu portafolio debe tener una barra de navegación con un id de navbar -->
+<!-- La barra de navegación debe tener al menos un enlace donde puedas hacer clic para navegar a diferentes secciones de la página -->
+        <nav id="navbar" class="barra-navegacion">
+            <ul class="lista-barra-navegacion">
+                <li><a href="#welcome-section">Inicio</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#certificados">Certificaciones</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Final de la barra de navegacion -->
+        <!-- Primera seccion nombre y bienvenida-->
+<!-- Tu portafolio debe tener una sección de bienvenida con un id de welcome-section -->
+<!-- La sección de bienvenida debe tener un elemento h1 que contenga texto -->
+        <section id="welcome-section" class="seccion-inicio">
+            <h1>DJ Surgeon Web Developer</h1>
+            <p>Lleva tus diseños al siguiente nivel</p>
+        </section>
+        <!-- Fin de la seccion de bienvenida -->
+        <!-- Voy a crear un seccion con habilidades -->
+        <section id="habilidades" class="seccion-habilidades">
+            <h2>Mi habilidades como programador</h2>
+            <ul class="lista-seccion-habilidades">
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="148" viewBox="0 -960 960 960" width="148"><path d="M3.077-366.154v-227.692h38.769v86.692h113v-86.692h38.769v227.692h-38.769v-102.231h-113v102.231H3.077Zm314.462 0v-188.923h-73.847v-38.769h186.462v38.769h-73.847v188.923h-38.768Zm162.692 0v-196.769q0-13.423 8.615-22.173 8.616-8.75 22.308-8.75h191.538q13.692 0 22.307 8.75 8.616 8.75 8.616 22.173v196.769h-38.769v-188.923h-68.539v147.307h-38.768v-147.307H519v188.923h-38.769Zm326 0v-227.692H845v188.923h111.923v38.769H806.231Z"/></svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="148" viewBox="0 -960 960 960" width="148"><path d="M417.462-366.154q-13.423 0-22.173-8.75-8.75-8.75-8.75-22.173V-440h38.768v35.077h110.155v-59.539H414.385q-11.5 0-19.673-8.173-8.173-8.173-8.173-20.057v-70.231q0-13.423 8.75-22.173 8.75-8.75 22.173-8.75h125.845q13.423 0 22.173 8.75 8.75 8.75 8.75 22.173V-520h-38.768v-35.077H425.307v59.539h121.078q11.499 0 19.672 8.173t8.173 19.672v70.616q0 13.423-8.75 22.173-8.75 8.75-22.173 8.75H417.462Zm258.077 0q-13.423 0-22.173-8.75-8.75-8.75-8.75-22.173V-440h38.768v35.077h110.155v-59.539H672.461q-11.499 0-19.672-8.173t-8.173-20.057v-70.231q0-13.423 8.75-22.173 8.75-8.75 22.173-8.75h125.845q13.423 0 22.173 8.75 8.75 8.75 8.75 22.173V-520h-38.768v-35.077H683.384v59.539h121.077q11.5 0 19.673 8.173 8.173 8.173 8.173 19.672v70.616q0 13.423-8.75 22.173-8.75 8.75-22.173 8.75H675.539Zm-516.154 0q-13.423 0-22.173-8.75-8.75-8.75-8.75-22.173v-165.846q0-13.423 8.75-22.173 8.75-8.75 22.173-8.75h125.846q13.423 0 22.173 8.75 8.75 8.75 8.75 22.173V-520h-38.769v-35.077H167.231v150.154h110.154V-440h38.769v42.923q0 13.423-8.75 22.173-8.75 8.75-22.173 8.75H159.385Z"/></svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="148" viewBox="0 -960 960 960" width="148"><path d="M273.231-366.154q-12.564 0-20.59-8.026-8.025-8.025-8.025-20.589V-460h38.768v55.077h89.385v-188.923h38.769v199.077q0 12.692-8.026 20.653-8.025 7.962-20.589 7.962H273.231Zm243.846 0q-13.423 0-22.173-8.75-8.75-8.75-8.75-22.173V-440h38.769v35.077h110.154v-59.539H514q-11.5 0-19.673-8.173-8.173-8.173-8.173-20.057v-70.231q0-13.423 8.75-22.173 8.75-8.75 22.173-8.75h125.846q13.423 0 22.173 8.75 8.75 8.75 8.75 22.173V-520h-38.769v-35.077H524.923v59.539H646q11.5 0 19.673 8.173 8.173 8.173 8.173 19.672v70.616q0 13.423-8.75 22.173-8.75 8.75-22.173 8.75H517.077Z"/></svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="148" viewBox="0 -960 960 960" width="148"><path d="M128.462-366.154v-227.692h148.923q16.154 0 27.461 11.692 11.308 11.693 11.308 27.846v70.924q0 16.153-11.308 27.461-11.307 11.307-27.461 11.307H167.231v78.462h-38.769Zm259.923 0v-227.692h39.154v86.692h112.615v-86.692h39.153v227.692h-39.153v-102.231H427.539v102.231h-39.154Zm276.231 0v-227.692h148.923q16.153 0 27.461 11.692 11.307 11.693 11.307 27.846v70.924q0 16.153-11.307 27.461-11.308 11.307-27.461 11.307H703.384v78.462h-38.768Zm-497.385-117.23h110.154v-70.924H167.231v70.924Zm536.153 0h110.155v-70.924H703.384v70.924Z"/></svg></li>
+            </ul>
+        </section>
+        <!-- Aqui finalizacion la seccion de habilidades-->
+        <!-- Aqui va una seccion para las certificaciones -->
+        <section id="certificados" class="seccion-certificados">
+            <h2>Certificaciones</h2>
+            <ul class="lista-seccion-certificados">
+                <li><img src="certificado 1.jpg" alt="Iniciación a la programación"></li>
+                <li><img src="certificado 2.jpg" alt="Conceptos básicos de programación"></li>
+            </ul>
+        </section>
+        <!-- Aqui acaban las certificaciones -->
+<!-- Tu portafolio debe tener una sección de proyectos con un id de projects -->
+<!-- La sección de proyectos debe tener al menos un elemento con una class de project-tile para tener un proyecto -->
+<!-- La sección de proyectos debe tener al menos un enlace a un proyecto -->
+        <!-- Seccion de proyectos creados en freecodecamp-->
+        <section id="projects" class="seccion-proyectos">
+            <h2 class="project-tile">Proyectos</h2>
+            <div class="lista-seccion-proyectos">
+                <a href="https://codepen.io/DjSurgeon/pen/dywyJWr" target="_blank">
+                    <img src="web_01.jpg" alt="Formulario de presupuesto">
+                </a>
+            </div>
+        </section>
+        <!-- Fin de la seccion de proyectos -->
+        <!-- Formulario final de contacto-->
+        <section id="contacto" class="seccion-contacto">
+            <h2>Contacto</h2>
+            <div class="lista-seccion-contacto">
+                <p><a href="https://github.com/DjSurgeon" target="_blank" id="profile-link"><svg class="enlace-contacto" width="98" height="96" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#fff"/></svg></a></p>
+            </div>
+        </section>
+        <!-- Fin de la seccion final del formulario-->
+    </body>
+</html>

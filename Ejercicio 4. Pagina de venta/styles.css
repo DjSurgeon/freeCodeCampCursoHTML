@@ -4,12 +4,11 @@
 }
 div #header {
     display: flex;
-    /* La barra superior no queda bien, se superpone con el texto
     position: fixed;
     justify-content: space-around;
     align-items: center;
     min-height: 100;
-    width: 100%;*/
+    width: 100%;
 }
 body {
     background-image: linear-gradient(rgb(245, 219, 180), rgb(157, 157, 138));

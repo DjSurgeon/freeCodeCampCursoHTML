@@ -1,0 +1,163 @@
+:root {
+    --fondo-principal: #0000ff;
+    --fondo-secundario: #0c1644;;
+    --letras-principal: #e7f623;
+    --letras-secundario: #485467;
+}
+* {
+    margin: 0;
+    padding: 0;
+    /* border: dotted 1px black; */
+}
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    display: block;
+}
+body {
+    background-color: var(--fondo-principal);
+    color: var(--letras-principal);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.barra-navegacion {
+    background-color: var(--fondo-secundario);
+    color: var(--letras-principal);
+    font-size: 0.7em;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+.lista-barra-navegacion {
+    display: flex;
+    margin-right: 2rem;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: list-item;
+    padding: 0.5em 0.5em;
+}
+li a {
+    text-decoration: none;
+    color: var(--letras-principal);
+}
+.lista-barra-navegacion li:hover{
+    background-color: var(--fondo-principal);
+    color: var(--letras-secundario);
+    transition-delay: 100ms;
+}
+.seccion-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, var(--fondo-principal), var(--fondo-secundario));
+}
+h1 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 10px 10px 7px var(--letras-secundario);
+}   
+p {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.2em;
+    font-weight: 100;
+    font-style: italic;
+}
+h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}   
+.seccion-habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, var(--fondo-principal), var(--fondo-secundario));
+}
+.lista-seccion-habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lista-seccion-habilidades li:hover{
+    transform: scale(2);
+    transition-delay: 250;
+}
+img {
+    width: 250px;
+    border-radius: 10px;
+}
+.seccion-certificados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, var(--fondo-principal), var(--fondo-secundario));
+}
+.lista-seccion-certificados {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+img:hover {
+    transform: scale(2);
+    border-radius: 25px;
+    transition-delay: 250;
+}
+.lista-seccion-proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.seccion-proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, var(--fondo-principal), var(--fondo-secundario));
+}
+.seccion-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, var(--fondo-principal), var(--fondo-secundario));
+}
+.lista-seccion-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.enlace-contacto:hover {
+    transform: scale(2);
+    border-radius: 25px;
+    transition-delay: 250;
+}
+@media (max-width: 61.25em){
+html {
+    font-size: 58%;
+}
+}
